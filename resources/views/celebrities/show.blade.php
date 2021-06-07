@@ -10,7 +10,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card bg-dark">
-                                    <img class="img-thumbnail rounded" src="/image/{{$celebrity->image}}" alt="{{$celebrity->image}}">
+                                    <img class="img-thumbnail rounded" src="{{ asset('image/' . $celebrity->image) }}" alt="{{$celebrity->image}}">
                                     <a href="{{route('celebrities.index')}}" class="btn btn-primary">Home</a>
                                 </div>
                             </div>

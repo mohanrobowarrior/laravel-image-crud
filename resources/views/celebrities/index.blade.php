@@ -36,7 +36,7 @@
                                             @foreach($celebrities as $celebrity)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
-                                                    <td><img src="/image/{{ $celebrity->image }}" alt="{{ $celebrity->celebrity }}" width="100px"></td>
+                                                    <td><img src="{{ asset('image/' . $celebrity->image) }}" alt="{{ $celebrity->celebrity }}" width="100px"></td>
                                                     <td>{{ $celebrity->celebrity }}</td>
                                                     <td>{{ $celebrity->residence }}</td>
                                                     <td>{{ $celebrity->citizenship }}</td>
